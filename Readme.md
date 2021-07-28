@@ -7,4 +7,6 @@
 `git add .`
 
 `git commit -m "Relevant message"`
+
+` git push --set-upstream origin <your_branch_name`
  
