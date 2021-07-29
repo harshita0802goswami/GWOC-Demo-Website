@@ -150,7 +150,7 @@ h1 {
   gap: 1.5rem;
 }
 .projects .box {
-  flex: 1 1 30rem;
+  flex: 1 1 40rem;
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   padding: 1rem;
@@ -168,21 +168,26 @@ h1 {
   margin-left: 6rem;
   padding: 1rem 6rem;
 }
+
+/* footer */
+
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+
 }
 .footer .box-container .box {
   flex: 1 1 20rem;
+  text-align: center;
 }
 .footer .box-container .box h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #045de9;
-  padding: 7rem 0;
+  padding: 4rem 0;
 }
 .footer .box-container .box p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #f57520;
   font-weight: 500;
   padding: 0.7rem 0;
@@ -190,14 +195,15 @@ h1 {
 }
 .footer .box-container .box p i {
   padding-right: 0.5rem;
-  color: #cc2b5e;
+  color: #f57520;
 }
 .footer .box-container .box a {
   display: block;
   font-size: 1.7rem;
   font-weight: 500;
-  color: #d76067;
+  color: #f57520;
   padding: 0.7rem 0;
+  text-decoration: none;
 }
 .footer .box-container .box a:hover {
   color: #753a88;
@@ -210,8 +216,17 @@ h1 {
   text-align: center;
   border-top: 0.1rem solid #d76067;
 }
+
+.footer .credit-end{
+  font-size: medium;
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  text-align: center;
+  border-top: 0.1rem solid #d76067;
+}
 .footer .credit span {
-  color: #cc2b5e;
+  color: #f57520;
   font-weight: 500;
 }
 
