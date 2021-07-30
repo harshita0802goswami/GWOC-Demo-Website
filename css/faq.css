@@ -68,6 +68,21 @@ header .navbar a:hover {
   font-weight: 700;
   padding-bottom: 20px;
 }
+@media only screen and (max-width: 400px){
+  .title {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .title {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 900px){
+  .title {
+    font-size: 25px;
+  }
+}
 .question {
   color: hsl(237, 12%, 33%);
   display: inline-block;
