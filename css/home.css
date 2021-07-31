@@ -190,17 +190,6 @@ h1 {
 
 /* responsiveness */
 
-@media only screen and (max-width: 720px) {
-  .footerkalogo {
-    width: 300px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .footerkalogo {
-    width: 200px;
-  }
-}
-
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -484,6 +473,7 @@ li[class="sm1"] a:hover {
 }
 
 #registration .registration-box .register-button {
+  
   width: 150px;
   height: 40px;
   background-color: var(--orange-color);
