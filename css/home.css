@@ -43,7 +43,7 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-.btn {
+/* .btn {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.8rem 3rem;
@@ -56,7 +56,7 @@ body {
 }
 .btn:hover {
   background: #4056a1;
-}
+} */
 section {
   padding: 3rem 7%;
 }
@@ -64,21 +64,26 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 1rem 7%;
+  width: 85%;
+  padding: 1rem 4%;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: fixed;
+  top:1rem;
+  right:7.25%;
   z-index: 1000;
+  background-color: white;
+  border-radius:20px;
+  margin-bottom: 15px;
 }
 header .logo {
   font-size: 2.5rem;
   font-weight: bold;
   background: var(--gradient);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 header .logo img {
-  max-width: 35rem;
+  max-width: 30rem;
 }
 
 header .navbar a {
@@ -101,18 +106,41 @@ header .navbar a:hover {
 }
 .home {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1.5rem;
   align-items: center;
+  margin-top:120px;
+  margin-bottom:50px;
 }
+/* .home:before{
+  content:"";
+  position: absolute;
+  top:25%;
+  left:8%;
+  right:7%;
+  background-color:red;
+  width:84%;
+  height:100%;
+  background:url("/assets/WhatsApp\ Image\ 2021-07-31\ at\ 21.54.40.jpeg");
+  background-size:cover;
+  background-position: center;
+  opacity:0.2;
+} */
 .home .content {
-  flex: 1 1 40rem;
+  flex: 1 1 50%;
+  font-weight:lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.home .image {
-  flex: 1 1 40rem;
+.home .content h3>span{
+  font-weight:bolder;
 }
-.home .image img {
-  width: 100%;
+.home .illustration{
+  flex:1 1 50%;
+}
+.home .illustration>img{
+  max-width:90%;
 }
 .home .content h3 {
   /* color: #4056A1; */
@@ -121,20 +149,8 @@ header .navbar a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
-  font-weight: 700;
 }
-.home .content p {
-  padding: 1.5rem 0;
-  font-size: 1.7rem;
-  font-weight: 500;
-  color: #f57520;
-}
-h1 {
-  padding: 4rem 4rem 3rem;
-  /* position: relative; */
-  font-size: 3rem;
-  text-align: center;
-}
+
 
 /* h1::before {
   content: " ";
@@ -311,8 +327,10 @@ li[class="sm1"] a:hover {
   header {
     padding: 2rem;
   }
-  section {
-    padding: 2rem;
+}
+@media screen and (max-width:1100px){
+  .home{
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 778px) {
@@ -329,11 +347,16 @@ li[class="sm1"] a:hover {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   header .navbar a {
+    width:80%;
     font-size: 2.5rem;
     display: block;
     margin: 2rem 0;
@@ -414,12 +437,16 @@ li[class="sm1"] a:hover {
 }
 .logo {
   text-align: center;
-  margin: auto 40px;
+  margin: auto 10px;
   width: 30%;
 }
 .logo img {
   max-width: 90%;
   max-height: 90%;
+}
+#about-gwoc .gwoc-logo>img{
+  max-width:80%;
+  max-height:100%;
 }
 
 /* styling registration section */
@@ -429,6 +456,7 @@ li[class="sm1"] a:hover {
   align-items: center;
   flex-wrap: wrap;
   padding: 10px;
+  margin-bottom: 40px;
 }
 #registration-heading {
   text-align: center;
@@ -448,7 +476,7 @@ li[class="sm1"] a:hover {
   align-items: center;
   flex-direction: column;
   margin: 10px;
-  text-align: center;
+  text-align: justify;
   border-radius: 20px;
   box-shadow: 1px 1px 3px 1px var(--orange-color);
   padding: 15px 10px;
@@ -525,7 +553,15 @@ li[class="sm1"] a:hover {
     text-align: left;
   }
   .logo {
-    width: 100%;
+    width: 50%;
+    margin:auto 0px;
+  }
+  #about-gs{
+    flex-direction: column-reverse;
+  }
+  #about-gs .logo{
+    width:80%;
+    margin-bottom:20px;
   }
 }
 
@@ -536,7 +572,7 @@ li[class="sm1"] a:hover {
   .about {
     padding: 30px 10px;
   }
-  #about-gwoc .logo {
+  #about-gwoc .gwoc-logo {
     display: none;
   }
   .about-info {
@@ -555,12 +591,20 @@ li[class="sm1"] a:hover {
   #registration .registration-box h3 {
     font-size: 2.8rem;
   }
+  header{
+    width:90%;
+    right:6%;
+  }
 }
 
 /* STYLING THE SCHEDULE TIMELINE */
 #timeline {
   padding: 50px;
   font-size: 100%;
+  background:url(/assets/schedule.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #timeline-heading {
   text-align: center;
