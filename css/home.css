@@ -277,7 +277,7 @@ li[class="sm1"] a {
   font-size: 16px;
   display: block;
   text-align: center;
-  color: #F57520;
+  color: #f57520;
 }
 
 li[class="sm1"] a:hover {
@@ -288,9 +288,9 @@ li[class="sm1"] a:hover {
 /* For responsive floating social media links */
 @media only screen and (max-width: 765px) {
   .social1 {
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
   }
   .social {
     display: none;
@@ -376,9 +376,33 @@ li[class="sm1"] a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 #about-gwoc .about-content {
+  @media screen and (max-width: 1409px) {
+    .structure-content h2 {
+      font-size: 2.3rem;
+    }
+    .structure-content ul {
+      font-size: 1.5rem;
+    }
+    .structure-card .structure-box {
+      flex-direction: column;
+      margin: 20px 10px;
+    }
+    .structure-card {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      box-shadow: 1px 1px 3px 1px var(--white-color);
+      border-radius: 15px;
+      margin: 10px;
+      background-color: #fff;
+      color: #ff4e00;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+  }
   color: var(--orange-color);
 }
 #about-gwoc .about-content span {
@@ -414,7 +438,7 @@ li[class="sm1"] a:hover {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding:10px;
+  padding: 10px;
 }
 #registration-heading {
   text-align: center;
@@ -425,19 +449,19 @@ li[class="sm1"] a:hover {
   padding: 10px;
   margin: 20px 0px;
 }
-#registration .registration-box{
-  width:300px;
-  height:400px;
-  max-height:fit-content;
-  display:flex;
+#registration .registration-box {
+  width: 300px;
+  height: 400px;
+  max-height: fit-content;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin:10px;
+  margin: 10px;
   text-align: center;
-  border-radius:20px;
-  box-shadow:1px 1px 3px 1px var(--orange-color);
-  padding:15px 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px 1px var(--orange-color);
+  padding: 15px 10px;
 }
 #registration .registration-box h3 {
   color: var(--orange-color);
@@ -454,8 +478,8 @@ li[class="sm1"] a:hover {
   color: var(--orange-color);
 }
 
-#registration .registration-box p span{
-  font-weight:bold;
+#registration .registration-box p span {
+  font-weight: bold;
 }
 
 #registration .registration-box .register-button {
@@ -542,13 +566,12 @@ li[class="sm1"] a:hover {
   }
 }
 
-
 /* STYLING THE SCHEDULE TIMELINE */
-#timeline{
-  padding:50px;
-  font-size:100%;
+#timeline {
+  padding: 50px;
+  font-size: 100%;
 }
-#timeline-heading{
+#timeline-heading {
   text-align: center;
   font-size: 4.5rem;
   width: 100%;
@@ -557,131 +580,237 @@ li[class="sm1"] a:hover {
   padding: 10px;
   margin: 20px 0px;
 }
-#timeline-container{
+#timeline-container {
   position: relative;
   /* max-width:1200px; */
-  margin:20px auto;
-  padding:30px 30px 30px 50px;
+  margin: 20px auto;
+  padding: 30px 30px 30px 50px;
 }
-#timeline-container::after{
-  content:"";
+#timeline-container::after {
+  content: "";
   position: absolute;
-  width:7px;
-  background-color:black;
-  top:0px;
-  bottom:0px;
-  left:50%;
+  width: 7px;
+  background-color: black;
+  top: 0px;
+  bottom: 0px;
+  left: 50%;
 }
-.event-container{
-  padding:0px;
-  position:relative;
-  width:40%;
-  border:1px solid black;
+.event-container {
+  padding: 0px;
+  position: relative;
+  width: 40%;
+  border: 1px solid black;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border-radius:15px;
+  border-radius: 15px;
 }
-.container-dates{
-  padding:15px 20px;
-  line-height:25px;
-  background-color:#ff7a00;
-  color:white;
-  border-radius:15px;
+.container-dates {
+  padding: 15px 20px;
+  line-height: 25px;
+  background-color: #ff7a00;
+  color: white;
+  border-radius: 15px;
 }
-.container-dates h3{
-  font-size:1.8em;
+.container-dates h3 {
+  font-size: 1.8em;
 }
-.container-dates p{
-  font-size:1.8em;
-  padding:5px 0px;
-  font-weight:bolder;
-  color:black;
+.container-dates p {
+  font-size: 1.8em;
+  padding: 5px 0px;
+  font-weight: bolder;
+  color: black;
 }
-.container-content{
-  color:#ff7a00;
-  padding:20px 30px;
-  font-size:1.6em;
-  display:none;
+.container-content {
+  color: #ff7a00;
+  padding: 20px 30px;
+  font-size: 1.6em;
+  display: none;
 }
-.event-container:hover .container-content{
-  display:block;
+.event-container:hover .container-content {
+  display: block;
 }
-.event-container:hover .container-dates{
-  border-radius:15px 15px 0px 0px;
+.event-container:hover .container-dates {
+  border-radius: 15px 15px 0px 0px;
 }
-.event-container::after{
-  content:"";
-  background-color:red;
-  width:20px;
+.event-container::after {
+  content: "";
+  background-color: red;
+  width: 20px;
   height: 20px;
-  border-radius:50%;
+  border-radius: 50%;
   position: absolute;
-  z-index:1;
+  z-index: 1;
 }
 
-.left::after{
-  right:-26.5%;
+.left::after {
+  right: -26.5%;
 }
-.right::after{
-  right:117%;
+.right::after {
+  right: 117%;
 }
-.right{
-  left:55%;
-  margin-left:20px;
+.right {
+  left: 55%;
+  margin-left: 20px;
 }
-#event2{
-  bottom:10px;
+#event2 {
+  bottom: 10px;
 }
-#event3{
-  bottom:20px;
+#event3 {
+  bottom: 20px;
 }
-#event4{
-  bottom:30px;
+#event4 {
+  bottom: 30px;
 }
-#event5{
-  bottom:40px;
+#event5 {
+  bottom: 40px;
 }
-#event6{
-  bottom:50px;
+#event6 {
+  bottom: 50px;
 }
-#event7{
-  bottom:60px;
+#event7 {
+  bottom: 60px;
 }
-#event8{
-  bottom:70px;
+#event8 {
+  bottom: 70px;
 }
 
-
-@media screen and (max-width:800px){
-  #timeline-container::after{
-      left:0%;
+@media screen and (max-width: 800px) {
+  #timeline-container::after {
+    left: 0%;
   }
-  .event-container{
-      width:100%;
+  .event-container {
+    width: 100%;
   }
-  .left{
-      margin-top:10px;
-      margin-bottom:30px;
-      margin-left:0px;
-      margin-left:30px;
+  .left {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-left: 30px;
   }
-  .right{
-      left:0%;
-      margin-top:10px;
-      margin-bottom:30px;
-      margin-left:0px;
-      margin-left:30px;
+  .right {
+    left: 0%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-left: 30px;
   }
-  .left::after,.right::after{
-      left:-87px;
+  .left::after,
+  .right::after {
+    left: -87px;
   }
-  #event1,#event2,#event3,#event4,#event5,#event6,#event7,#event8{
-      bottom:0px;
+  #event1,
+  #event2,
+  #event3,
+  #event4,
+  #event5,
+  #event6,
+  #event7,
+  #event8 {
+    bottom: 0px;
   }
 }
-@media screen and (max-width:400px){
-  .container-dates p{
-      font-size:1.2em;
+@media screen and (max-width: 400px) {
+  .container-dates p {
+    font-size: 1.2em;
+  }
+}
+
+/* styling structure */
+#structure {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+}
+.structure-container {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.structure-card {
+  position: relative;
+  width: 320px;
+  height: 420px;
+  box-shadow: 1px 1px 3px 1px var(--white-color);
+  border-radius: 15px;
+  margin: 10px;
+  background-color: #fff;
+  color: #ff4e00;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.structure-card .structure-box {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.structure-card:hover .structure-box {
+  background: linear-gradient(45deg, #ec9f05e5, hsla(18, 100%, 50%, 0.733));
+}
+.structure-content {
+  /* position: absolute; */
+  bottom: 5px;
+  padding: 20px;
+  padding: 15px;
+  font-size: 20px;
+}
+.structure-content h2 {
+  color: var(--orange-color);
+  font-size: 1.8em;
+  transition: 0.5s;
+  text-align: center;
+  padding: 30px 0;
+}
+#doc {
+  padding-top: 1px;
+}
+.stru-content {
+  font-size: 2.3em;
+}
+.stru-content span {
+  color: #045de9;
+}
+.structure-card:hover .structure-box .structure-content h2 {
+  color: #fff;
+}
+.structure-card:hover .structure-box .structure-content ul {
+  color: #fff;
+}
+ul {
+  list-style-type: none;
+}
+@media screen and (max-width: 1409px) {
+  .structure-content h2 {
+    font-size: 2.3rem;
+  }
+  .structure-content ul {
+    font-size: 1.5rem;
+  }
+  .structure-card .structure-box {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+  .structure-card {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    box-shadow: 1px 1px 3px 1px var(--white-color);
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #fff;
+    color: #ff4e00;
+    overflow: hidden;
+    transition: 0.5s;
   }
 }
