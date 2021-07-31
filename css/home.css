@@ -78,7 +78,7 @@ header .logo {
   -webkit-text-fill-color: transparent;
 }
 header .logo img {
-  width: 30rem;
+  max-width: 35rem;
 }
 header .navbar a {
   margin-left: 2rem;
@@ -414,6 +414,7 @@ li[class="sm1"] a:hover {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  padding:10px;
 }
 #registration-heading {
   text-align: center;
@@ -424,18 +425,19 @@ li[class="sm1"] a:hover {
   padding: 10px;
   margin: 20px 0px;
 }
-#registration .registration-box {
-  width: 350px;
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
+#registration .registration-box{
+  width:300px;
+  height:400px;
+  max-height:fit-content;
+  display:flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 15px;
-  padding: 25px;
+  margin:10px;
   text-align: center;
-  border-radius: 20px;
-  box-shadow: 1px 1px 3px 1px var(--orange-color);
+  border-radius:20px;
+  box-shadow:1px 1px 3px 1px var(--orange-color);
+  padding:15px 10px;
 }
 #registration .registration-box h3 {
   color: var(--orange-color);
@@ -447,10 +449,15 @@ li[class="sm1"] a:hover {
 #registration .registration-box p {
   font-size: 1.7rem;
   font-weight: lighter;
-  margin: 20px;
+  margin: 5px;
   margin-bottom: 40px;
   color: var(--orange-color);
 }
+
+#registration .registration-box p span{
+  font-weight:bold;
+}
+
 #registration .registration-box .register-button {
   width: 150px;
   height: 40px;
@@ -532,5 +539,149 @@ li[class="sm1"] a:hover {
   }
   #registration .registration-box h3 {
     font-size: 2.8rem;
+  }
+}
+
+
+/* STYLING THE SCHEDULE TIMELINE */
+#timeline{
+  padding:50px;
+  font-size:100%;
+}
+#timeline-heading{
+  text-align: center;
+  font-size: 4.5rem;
+  width: 100%;
+  color: #045de9;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px 0px;
+}
+#timeline-container{
+  position: relative;
+  /* max-width:1200px; */
+  margin:20px auto;
+  padding:30px 30px 30px 50px;
+}
+#timeline-container::after{
+  content:"";
+  position: absolute;
+  width:7px;
+  background-color:black;
+  top:0px;
+  bottom:0px;
+  left:50%;
+}
+.event-container{
+  padding:0px;
+  position:relative;
+  width:40%;
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius:15px;
+}
+.container-dates{
+  padding:15px 20px;
+  line-height:25px;
+  background-color:#ff7a00;
+  color:white;
+  border-radius:15px;
+}
+.container-dates h3{
+  font-size:1.8em;
+}
+.container-dates p{
+  font-size:1.8em;
+  padding:5px 0px;
+  font-weight:bolder;
+  color:black;
+}
+.container-content{
+  color:#ff7a00;
+  padding:20px 30px;
+  font-size:1.6em;
+  display:none;
+}
+.event-container:hover .container-content{
+  display:block;
+}
+.event-container:hover .container-dates{
+  border-radius:15px 15px 0px 0px;
+}
+.event-container::after{
+  content:"";
+  background-color:red;
+  width:20px;
+  height: 20px;
+  border-radius:50%;
+  position: absolute;
+  z-index:1;
+}
+
+.left::after{
+  right:-26.5%;
+}
+.right::after{
+  right:117%;
+}
+.right{
+  left:55%;
+  margin-left:20px;
+}
+#event2{
+  bottom:10px;
+}
+#event3{
+  bottom:20px;
+}
+#event4{
+  bottom:30px;
+}
+#event5{
+  bottom:40px;
+}
+#event6{
+  bottom:50px;
+}
+#event7{
+  bottom:60px;
+}
+#event8{
+  bottom:70px;
+}
+
+
+@media screen and (max-width:800px){
+  #timeline-container::after{
+      left:0%;
+  }
+  .event-container{
+      width:100%;
+  }
+  .left{
+      margin-top:10px;
+      margin-bottom:30px;
+      margin-left:0px;
+      margin-left:30px;
+  }
+  .right{
+      left:0%;
+      margin-top:10px;
+      margin-bottom:30px;
+      margin-left:0px;
+      margin-left:30px;
+  }
+  .left::after,.right::after{
+      left:-87px;
+  }
+  #event1,#event2,#event3,#event4,#event5,#event6,#event7,#event8{
+      bottom:0px;
+  }
+}
+@media screen and (max-width:400px){
+  .container-dates p{
+      font-size:1.2em;
   }
 }
