@@ -80,6 +80,7 @@ header .logo {
 header .logo img {
   max-width: 35rem;
 }
+
 header .navbar a {
   margin-left: 2rem;
   font-size: 2rem;
@@ -172,7 +173,7 @@ h1 {
 
 /* footer */
 
-.footer-logo {
+/* .footer-logo {
   width: 30rem;
   font-size: 2.5rem;
   font-weight: bold;
@@ -185,7 +186,7 @@ h1 {
   width: 400px;
   align-items: flex-end;
   margin: auto;
-}
+} */
 
 /* responsiveness */
 
@@ -604,6 +605,7 @@ li[class="sm1"] a:hover {
   justify-content: center;
   flex-direction: column;
   border-radius: 15px;
+  cursor: pointer;
 }
 .container-dates {
   padding: 15px 20px;
@@ -732,7 +734,7 @@ li[class="sm1"] a:hover {
 }
 .structure-card {
   position: relative;
-  width: 320px;
+  width: 270px;
   height: 420px;
   box-shadow: 1px 1px 3px 1px var(--white-color);
   border-radius: 15px;
@@ -763,7 +765,7 @@ li[class="sm1"] a:hover {
   bottom: 5px;
   padding: 20px;
   padding: 15px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .structure-content h2 {
   color: var(--orange-color);
@@ -790,9 +792,9 @@ li[class="sm1"] a:hover {
 ul {
   list-style-type: none;
 }
-@media screen and (max-width: 1409px) {
+@media screen and (max-width: 1200px) {
   .structure-content h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .structure-content ul {
     font-size: 1.5rem;
@@ -812,5 +814,21 @@ ul {
     color: #ff4e00;
     overflow: hidden;
     transition: 0.5s;
+  }
+}
+@media screen and (max-width: 400px) {
+  .structure-content h2 {
+    font-size: 1rem;
+  }
+  .structure-card .structure-box {
+    flex-direction: column;
+    margin: 5px 5px;
+  }
+  .structure-content h2 {
+    color: var(--orange-color);
+    font-size: 1.3em;
+    transition: 0.5s;
+    text-align: center;
+    padding: 10px 0;
   }
 }
