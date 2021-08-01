@@ -1,6 +1,18 @@
 
 let menu = document.querySelector("#menu");
 let navbar = document.querySelector(".navbar");
+let header=document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+  if(window.scrollY>0){
+    header.style.borderRadius="0px 0px 0px 0px";
+  }
+  else{
+    header.style.borderRadius="20px 20px 0px 0px";
+  }
+})
+
+
 
 menu.onclick = () => {
   menu.classList.toggle("fa-times");
