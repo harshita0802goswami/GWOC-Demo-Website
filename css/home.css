@@ -486,14 +486,14 @@ li[class="sm1"] a:hover {
   margin: 20px 0px;
 }
 #registration .registration-box {
-  width: 383px;
-  height: 410px;
+  width: 350px;
+  height: 400px;
   max-height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
+  margin: 5px;
   text-align: justify;
   border-radius: 20px;
   box-shadow: 1px 1px 3px 1px var(--orange-color);
