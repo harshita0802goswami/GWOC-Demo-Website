@@ -61,20 +61,19 @@ body {
 section {
   padding: 3rem 7%;
 }
-header {
-  display: flex;
-  align-items: center;
+header{
+  display:flex;
   justify-content: space-between;
-  width: 85%;
-  padding: 1rem 4%;
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 1rem;
-  right: 7.25%;
-  z-index: 1000;
-  background-color: white;
-  border-radius: 0.5rem;
-  margin-bottom: 15px;
+  align-items: center;
+  width:84%;
+  position:fixed;
+  top:3rem;
+  left:8%;
+  background-color:white;
+  padding:1rem 8%;
+  border-radius:20px 20px 0px 0px;
+  border-bottom:0.1rem solid rgba(0,0,0,0.1);
+  z-index:1000;
 }
 header .logo {
   font-size: 2.5rem;
@@ -107,11 +106,10 @@ header .navbar a:hover {
 }
 .home {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 1.5rem;
   align-items: center;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top:50px;
+  margin-bottom:50px;
 }
 /* .home:before{
   content:"";
@@ -152,6 +150,9 @@ header .navbar a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
+}
+.footer{
+  background-color: rgba(232,232,232,0.3);
 }
 
 /* h1::before {
@@ -207,7 +208,6 @@ header .navbar a:hover {
 } */
 
 /* responsiveness */
-
 .footer .box-container {
   display: flex;
   flex-wrap: wrap;
@@ -328,11 +328,19 @@ li[class="sm1"] a:hover {
   }
   header {
     padding: 2rem;
+    width:86%;
+    left:7%;
   }
 }
 @media screen and (max-width: 1100px) {
   .home {
     flex-wrap: wrap;
+    padding-top:80px;
+  }
+  header{
+    width:97.4%;
+    left:1.5rem;
+    top:1rem;
   }
 }
 @media (max-width: 778px) {
@@ -368,6 +376,10 @@ li[class="sm1"] a:hover {
 @media (max-width: 991px) {
   html {
     font-size: 50%;
+  }
+  header{
+    width:74.2%;
+    left:15.8rem;
   }
 }
 
@@ -596,9 +608,15 @@ li[class="sm1"] a:hover {
   #registration .registration-box h3 {
     font-size: 2.8rem;
   }
+<<<<<<< HEAD
   header {
     width: 90%;
     right: 6%;
+=======
+  header{
+    width: 94%;
+    left: 1.3rem;
+>>>>>>> b772e55... final changes done
   }
 }
 
@@ -606,8 +624,13 @@ li[class="sm1"] a:hover {
 #timeline {
   padding: 50px;
   font-size: 100%;
+<<<<<<< HEAD
   background: url(./assets/schedule.png);
   background-size: cover;
+=======
+  background:url("../assets/Untitled\ design\ \(8\).png");
+  background-size:cover;
+>>>>>>> b772e55... final changes done
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -651,7 +674,7 @@ li[class="sm1"] a:hover {
   line-height: 25px;
   background-color: #ff7a00;
   color: white;
-  border-radius: 15px;
+  border-radius: 15px 15px 0px 0px;
 }
 .container-dates h3 {
   font-size: 1.8em;
@@ -666,14 +689,15 @@ li[class="sm1"] a:hover {
   color: #ff7a00;
   padding: 20px 30px;
   font-size: 1.6em;
-  display: none;
+  background-color:white;
+  border-radius:0px 0px 15px 15px;
 }
-.event-container:hover .container-content {
+/* .event-container:hover .container-content {
   display: block;
-}
-.event-container:hover .container-dates {
+} */
+/* .event-container:hover .container-dates {
   border-radius: 15px 15px 0px 0px;
-}
+} */
 .event-container::after {
   content: "";
   background-color: red;
@@ -695,25 +719,25 @@ li[class="sm1"] a:hover {
   margin-left: 20px;
 }
 #event2 {
-  bottom: 10px;
-}
-#event3 {
   bottom: 20px;
 }
-#event4 {
-  bottom: 30px;
-}
-#event5 {
+#event3 {
   bottom: 40px;
 }
-#event6 {
-  bottom: 50px;
-}
-#event7 {
+#event4 {
   bottom: 60px;
 }
+#event5 {
+  bottom: 80px;
+}
+#event6 {
+  bottom: 100px;
+}
+#event7 {
+  bottom: 100px;
+}
 #event8 {
-  bottom: 70px;
+  bottom: 120px;
 }
 
 @media screen and (max-width: 800px) {
@@ -752,8 +776,18 @@ li[class="sm1"] a:hover {
   }
 }
 @media screen and (max-width: 400px) {
+  .left::after,
+  .right::after {
+    left: -38px;
+  }
+  #timeline{
+    padding:10px;
+  }
+  #timeline-container{
+    padding:30px 30px 30px 0px;
+  }
   .container-dates p {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 
