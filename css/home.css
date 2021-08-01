@@ -69,11 +69,11 @@ header {
   padding: 1rem 4%;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
   position: fixed;
-  top:1rem;
-  right:7.25%;
+  top: 1rem;
+  right: 7.25%;
   z-index: 1000;
   background-color: white;
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
   margin-bottom: 15px;
 }
 header .logo {
@@ -110,8 +110,8 @@ header .navbar a:hover {
   /* flex-wrap: wrap; */
   gap: 1.5rem;
   align-items: center;
-  margin-top:120px;
-  margin-bottom:50px;
+  margin-top: 120px;
+  margin-bottom: 50px;
 }
 /* .home:before{
   content:"";
@@ -129,20 +129,20 @@ header .navbar a:hover {
 } */
 .home .content {
   flex: 1 1 50%;
-  font-weight:lighter;
+  font-weight: lighter;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 15rem;
 }
-.home .content h3>span{
-  font-weight:bolder;
+.home .content h3 > span {
+  font-weight: bolder;
 }
-.home .illustration{
-  flex:1 1 50%;
+.home .illustration {
+  flex: 1 1 50%;
 }
-.home .illustration>img{
-  max-width:90%;
+.home .illustration > img {
+  max-width: 90%;
   padding-top: 11rem;
 }
 .home .content h3 {
@@ -153,7 +153,6 @@ header .navbar a:hover {
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
 }
-
 
 /* h1::before {
   content: " ";
@@ -331,8 +330,8 @@ li[class="sm1"] a:hover {
     padding: 2rem;
   }
 }
-@media screen and (max-width:1100px){
-  .home{
+@media screen and (max-width: 1100px) {
+  .home {
     flex-wrap: wrap;
   }
 }
@@ -350,7 +349,7 @@ li[class="sm1"] a:hover {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -359,7 +358,7 @@ li[class="sm1"] a:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   header .navbar a {
-    width:80%;
+    width: 80%;
     font-size: 2.5rem;
     display: block;
     margin: 2rem 0;
@@ -449,9 +448,9 @@ li[class="sm1"] a:hover {
   max-width: 90%;
   max-height: 90%;
 }
-#about-gwoc .gwoc-logo>img{
-  max-width:80%;
-  max-height:100%;
+#about-gwoc .gwoc-logo > img {
+  max-width: 80%;
+  max-height: 100%;
   position: relative;
   bottom: 53px;
 }
@@ -475,8 +474,8 @@ li[class="sm1"] a:hover {
   margin: 20px 0px;
 }
 #registration .registration-box {
-  width: 300px;
-  height: 400px;
+  width: 383px;
+  height: 410px;
   max-height: fit-content;
   display: flex;
   justify-content: center;
@@ -508,7 +507,6 @@ li[class="sm1"] a:hover {
 }
 
 #registration .registration-box .register-button {
-  
   width: 150px;
   height: 40px;
   background-color: var(--orange-color);
@@ -561,14 +559,14 @@ li[class="sm1"] a:hover {
   }
   .logo {
     width: 50%;
-    margin:auto 0px;
+    margin: auto 0px;
   }
-  #about-gs{
+  #about-gs {
     flex-direction: column-reverse;
   }
-  #about-gs .logo{
-    width:80%;
-    margin-bottom:20px;
+  #about-gs .logo {
+    width: 80%;
+    margin-bottom: 20px;
   }
 }
 
@@ -598,9 +596,9 @@ li[class="sm1"] a:hover {
   #registration .registration-box h3 {
     font-size: 2.8rem;
   }
-  header{
-    width:90%;
-    right:6%;
+  header {
+    width: 90%;
+    right: 6%;
   }
 }
 
@@ -608,8 +606,8 @@ li[class="sm1"] a:hover {
 #timeline {
   padding: 50px;
   font-size: 100%;
-  background:url(./assets/schedule.png);
-  background-size:cover;
+  background: url(./assets/schedule.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
