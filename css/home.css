@@ -110,7 +110,7 @@ header .navbar a:hover {
   align-items: center;
   margin-top:50px;
   margin-bottom:50px;
-  background: url(/assets/2.png);
+  background: url('/assets/2.png');
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +158,9 @@ header .navbar a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .footer{
   background-color: rgba(232,232,232,0.3);
 }
