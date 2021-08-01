@@ -265,7 +265,6 @@ header .navbar a:hover {
 }
 
 ul[class="social-media1"] {
-  padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
@@ -395,6 +394,8 @@ li[class="sm1"] a:hover {
 #about-gs {
   background-color: var(--orange-color);
   color: var(--white-color);
+  position: relative;
+  top: 10rem;
 }
 #about-gwoc {
   background-color: var(--white-color);
