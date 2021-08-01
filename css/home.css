@@ -608,15 +608,9 @@ li[class="sm1"] a:hover {
   #registration .registration-box h3 {
     font-size: 2.8rem;
   }
-<<<<<<< HEAD
-  header {
-    width: 90%;
-    right: 6%;
-=======
   header{
     width: 94%;
     left: 1.3rem;
->>>>>>> b772e55... final changes done
   }
 }
 
@@ -624,13 +618,8 @@ li[class="sm1"] a:hover {
 #timeline {
   padding: 50px;
   font-size: 100%;
-<<<<<<< HEAD
-  background: url(./assets/schedule.png);
-  background-size: cover;
-=======
-  background:url("../assets/Untitled\ design\ \(8\).png");
+  background:url("../assets/schedule.png");
   background-size:cover;
->>>>>>> b772e55... final changes done
   background-position: center;
   background-repeat: no-repeat;
 }
