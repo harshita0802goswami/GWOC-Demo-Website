@@ -40,7 +40,7 @@ body {
   padding-bottom: 9rem;
 }
 .container {
-  background: #fff;
+  background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -110,6 +110,11 @@ header .navbar a:hover {
   align-items: center;
   margin-top:50px;
   margin-bottom:50px;
+  background: url(/assets/2.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 100;
 }
 /* .home:before{
   content:"";
@@ -126,12 +131,15 @@ header .navbar a:hover {
   opacity:0.2;
 } */
 .home .content {
-  flex: 1 1 50%;
+  flex: 1 1 60%;
   font-weight: lighter;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 15rem;
+}
+.home .content h3{
+  text-align: justify;
 }
 .home .content h3 > span {
   font-weight: bolder;
@@ -232,10 +240,12 @@ header .navbar a:hover {
   font-weight: 500;
   padding: 0.7rem 0;
   text-transform: none;
+  text-align: justify;
 }
 .footer .box-container .box p i {
   padding-right: 0.5rem;
   color: #f57520;
+  
 }
 .footer .box-container .box a {
   display: block;
@@ -389,13 +399,13 @@ li[class="sm1"] a:hover {
   align-items: center;
   padding: 80px;
   position: relative;
-  top: 33px;
+  top: 30px;
 }
 #about-gs {
   background-color: var(--orange-color);
   color: var(--white-color);
   position: relative;
-  top: 10rem;
+  top: 4rem;
 }
 #about-gwoc {
   background-color: var(--white-color);
