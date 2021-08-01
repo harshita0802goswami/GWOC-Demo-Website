@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 :root {
   background-color: #f57520;
+  scroll-behavior: smooth;
 
   /* --gradient: linear-gradient(315deg,#647dee,#7f53ac) */
   /* background-color: #045de9;
@@ -35,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 }
 body {
   background: var(--gradient);
-  padding: 3rem 7%;
+  padding: 2rem 7%;
   padding-bottom: 9rem;
 }
 .container {
@@ -72,7 +73,7 @@ header {
   right:7.25%;
   z-index: 1000;
   background-color: white;
-  border-radius:20px;
+  border-radius:0.5rem;
   margin-bottom: 15px;
 }
 header .logo {
@@ -132,6 +133,7 @@ header .navbar a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 15rem;
 }
 .home .content h3>span{
   font-weight:bolder;
@@ -141,6 +143,7 @@ header .navbar a:hover {
 }
 .home .illustration>img{
   max-width:90%;
+  padding-top: 11rem;
 }
 .home .content h3 {
   /* color: #4056A1; */
@@ -375,6 +378,8 @@ li[class="sm1"] a:hover {
   justify-content: center;
   align-items: center;
   padding: 80px;
+  position: relative;
+  top: 33px;
 }
 #about-gs {
   background-color: var(--orange-color);
@@ -447,6 +452,8 @@ li[class="sm1"] a:hover {
 #about-gwoc .gwoc-logo>img{
   max-width:80%;
   max-height:100%;
+  position: relative;
+  bottom: 53px;
 }
 
 /* styling registration section */
