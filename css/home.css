@@ -65,25 +65,26 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:84%;
-  position:fixed;
-  top:0rem;
-  left:8%;
-  background-color:white;
-  padding:1rem 8%;
-  border-radius:20px 20px 0px 0px;
-  border-bottom:0.1rem solid rgba(0,0,0,0.1);
-  z-index:1000;
-  height:100px;
+  width: 84%;
+  position: fixed;
+  top: 0rem;
+  left: 8%;
+  background-color: white;
+  padding: 1rem 8%;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 100px;
 }
 
-@media screen and (max-width:412px){
-  #header{
-    top:0rem;
-    width:94.5%;
+@media screen and (max-width: 412px) {
+  #header {
+    top: 0rem;
+    width: 94.5%;
   }
-  #about-gs,#about-gwoc{
-    padding:10px;
+  #about-gs,
+  #about-gwoc {
+    padding: 10px;
   }
 }
 
@@ -102,7 +103,7 @@ header .navbar a {
   margin-left: 2rem;
   font-size: 2rem;
   font-weight: 500;
-  color: #045de9;
+  color: #2C599D;
   text-decoration: none;
 }
 header .navbar a:hover {
@@ -120,8 +121,8 @@ header .navbar a:hover {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  margin-top:50px;
-  margin-bottom:50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   /* background:url("../assets/bg.png");
   background-size:cover;
   background-position: center;
@@ -134,10 +135,10 @@ header .navbar a:hover {
   justify-content: center;
   align-items: center;
   padding-top: 15rem;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 .home .content h3 {
-  font-weight:bolder;
+  font-weight: bolder;
 }
 .home .illustration {
   flex: 1 1 50%;
@@ -149,7 +150,7 @@ header .navbar a:hover {
 .home .content h3 {
   /* color: #4056A1; */
   color: transparent;
-  background: #045de9;
+  background: #2C599D;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
@@ -222,13 +223,9 @@ header .navbar a:hover {
   flex: 1 1 20rem;
   text-align: center;
 }
-.footer .box-container .box {
-  flex: 1 1 20rem;
-  text-align: center;
-}
 .footer .box-container .box h3 {
   font-size: 2rem;
-  color: #045de9;
+  color: #2C599D;
   padding: 2rem 0;
 }
 .footer .box-container .box p {
@@ -265,7 +262,7 @@ header .navbar a:hover {
 
 .contact {
   font-size: 2rem;
-  color: #045de9;
+  color: #2C599D;
   padding: 2rem 0;
   text-align: center;
 }
@@ -277,6 +274,8 @@ ul[class="social-media1"] {
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 100%;
+  position: relative;
+  margin-top: 2rem;
 }
 
 li[class="sm1"] a {
@@ -294,7 +293,7 @@ li[class="sm1"] a {
 }
 
 li[class="sm1"] a:hover {
-  color: #045de9;
+  color: #2C599D;
 }
 /* Footer Social Media links finishes. */
 
@@ -329,7 +328,7 @@ li[class="sm1"] a:hover {
     font-size: 55%;
   }
   body {
-    padding: 0rem 1.5rem 1.5rem 1.5rem;;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
   }
   header {
     padding: 2rem;
@@ -382,8 +381,8 @@ li[class="sm1"] a:hover {
   html {
     font-size: 50%;
   }
-  header{
-    width:74.2%;
+  header {
+    width: 74.2%;
     /* left:15.8rem; */
   }
 }
@@ -406,7 +405,7 @@ li[class="sm1"] a:hover {
 #about-gwoc {
   background-color: var(--white-color);
   color: var(--orange-color);
-  color: #045de9;
+  color: #2C599D;
 }
 .about-info {
   display: flex;
@@ -444,8 +443,8 @@ li[class="sm1"] a:hover {
 #about-gwoc .about-content span {
   font-weight: bolder;
 }
-#about-gs .logo{
-  width:100%;
+#about-gs .logo {
+  width: 100%;
 }
 .about .heading {
   text-align: center;
@@ -490,7 +489,7 @@ li[class="sm1"] a:hover {
   text-align: center;
   font-size: 4.5rem;
   width: 100%;
-  color: #045de9;
+  color: #2C599D;
   font-weight: bold;
   padding: 10px;
   margin: 20px 0px;
@@ -522,7 +521,7 @@ li[class="sm1"] a:hover {
   font-weight: lighter;
   margin: 5px;
   margin-bottom: 40px;
-  color:black;
+  color: black;
 }
 
 #registration .registration-box p span {
@@ -545,6 +544,11 @@ li[class="sm1"] a:hover {
 }
 #registration .registration-box .register-button:hover {
   box-shadow: inset 200px 0px 0px 0px rgba(4, 93, 233, 0.8);
+}
+
+.faq {
+  position: relative;
+  margin-bottom: 3.5rem;
 }
 
 .faq-button {
@@ -586,7 +590,7 @@ li[class="sm1"] a:hover {
   }
   #about-gs {
     flex-direction: column-reverse;
-    padding:50px 5px;
+    padding: 50px 5px;
   }
   #about-gs .logo {
     width: 100%;
@@ -623,7 +627,7 @@ li[class="sm1"] a:hover {
   header {
     width: 94%;
     left: 1.3rem;
-    top:0px;
+    top: 0px;
   }
 }
 
@@ -640,7 +644,7 @@ li[class="sm1"] a:hover {
   text-align: center;
   font-size: 4.5rem;
   width: 100%;
-  color: #045de9;
+  color: #2C599D;
   font-weight: bold;
   padding: 10px;
   margin: 20px 0px;
@@ -669,7 +673,6 @@ li[class="sm1"] a:hover {
   justify-content: center;
   flex-direction: column;
   border-radius: 15px;
-  cursor: pointer;
 }
 .container-dates {
   padding: 15px 20px;
@@ -815,9 +818,9 @@ li[class="sm1"] a:hover {
   border-radius: 15px;
   margin: 10px;
   /* background-color: #fff; */
-  background-color: rgba(211, 211, 211,0.2);
+  background-color: rgba(211, 211, 211, 0.2);
   color: #ff4e00;
-  color:black;
+  color: black;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -846,8 +849,8 @@ li[class="sm1"] a:hover {
 }
 .structure-content h2 {
   color: var(--orange-color);
-  color:black;
-  font-weight:800;
+  color: black;
+  font-weight: 800;
   font-size: 1.8em;
   transition: 0.5s;
   text-align: center;
@@ -860,7 +863,7 @@ li[class="sm1"] a:hover {
   font-size: 2.3em;
 }
 .stru-content span {
-  color: #045de9;
+  color: #2C599D;
 }
 .structure-card:hover .structure-box .structure-content h2 {
   color: #fff;
@@ -874,7 +877,7 @@ ul {
 @media screen and (max-width: 1200px) {
   .structure-content h2 {
     font-size: 2rem;
-    color:black;
+    color: black;
   }
   .structure-content ul {
     font-size: 1.5rem;
@@ -890,7 +893,7 @@ ul {
     box-shadow: 1px 1px 3px 1px var(--white-color);
     border-radius: 15px;
     margin: 10px;
-    color:black;
+    color: black;
     overflow: hidden;
     transition: 0.5s;
   }
