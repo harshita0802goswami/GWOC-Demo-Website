@@ -127,20 +127,6 @@ header .navbar a:hover {
   background-position: center;
   background-repeat: no-repeat; */
 }
-/* .home:before{
-  content:"";
-  position: absolute;
-  top:25%;
-  left:8%;
-  right:7%;
-  background-color:red;
-  width:84%;
-  height:100%;
-  background:url("/assets/WhatsApp\ Image\ 2021-07-31\ at\ 21.54.40.jpeg");
-  background-size:cover;
-  background-position: center;
-  opacity:0.2;
-} */
 .home .content {
   flex: 1 1 60%;
   font-weight: lighter;
