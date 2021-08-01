@@ -61,19 +61,19 @@ body {
 section {
   padding: 3rem 7%;
 }
-header{
-  display:flex;
+header {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width:84%;
-  position:fixed;
-  top:3rem;
-  left:8%;
-  background-color:white;
-  padding:1rem 8%;
-  border-radius:20px 20px 0px 0px;
-  border-bottom:0.1rem solid rgba(0,0,0,0.1);
-  z-index:1000;
+  width: 84%;
+  position: fixed;
+  top: 3rem;
+  left: 8%;
+  background-color: white;
+  padding: 1rem 8%;
+  border-radius: 20px 20px 0px 0px;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 header .logo {
   font-size: 2.5rem;
@@ -108,10 +108,10 @@ header .navbar a:hover {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  margin-top:50px;
-  margin-bottom:50px;
-  background: url('/assets/2.png');
-  background-size:cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: url("/assets/2.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 100;
@@ -138,7 +138,7 @@ header .navbar a:hover {
   align-items: center;
   padding-top: 15rem;
 }
-.home .content h3{
+.home .content h3 {
   text-align: justify;
 }
 .home .content h3 > span {
@@ -158,11 +158,11 @@ header .navbar a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.footer{
-  background-color: rgba(232,232,232,0.3);
+.footer {
+  background-color: rgba(232, 232, 232, 0.3);
 }
 
 /* h1::before {
@@ -247,7 +247,6 @@ header .navbar a:hover {
 .footer .box-container .box p i {
   padding-right: 0.5rem;
   color: #f57520;
-  
 }
 .footer .box-container .box a {
   display: block;
@@ -339,19 +338,19 @@ li[class="sm1"] a:hover {
   }
   header {
     padding: 2rem;
-    width:86%;
-    left:7%;
+    width: 86%;
+    left: 7%;
   }
 }
 @media screen and (max-width: 1100px) {
   .home {
     flex-wrap: wrap;
-    padding-top:80px;
+    padding-top: 80px;
   }
-  header{
-    width:97.4%;
-    left:1.5rem;
-    top:1rem;
+  header {
+    width: 97.4%;
+    left: 1.5rem;
+    top: 1rem;
   }
 }
 @media (max-width: 778px) {
@@ -388,9 +387,9 @@ li[class="sm1"] a:hover {
   html {
     font-size: 50%;
   }
-  header{
-    width:74.2%;
-    left:15.8rem;
+  header {
+    width: 74.2%;
+    left: 15.8rem;
   }
 }
 
@@ -621,7 +620,7 @@ li[class="sm1"] a:hover {
   #registration .registration-box h3 {
     font-size: 2.8rem;
   }
-  header{
+  header {
     width: 94%;
     left: 1.3rem;
   }
@@ -631,8 +630,8 @@ li[class="sm1"] a:hover {
 #timeline {
   padding: 50px;
   font-size: 100%;
-  background:url("../assets/schedule.png");
-  background-size:cover;
+  background: url("../assets/schedule.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -691,8 +690,8 @@ li[class="sm1"] a:hover {
   color: #ff7a00;
   padding: 20px 30px;
   font-size: 1.6em;
-  background-color:white;
-  border-radius:0px 0px 15px 15px;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
 }
 /* .event-container:hover .container-content {
   display: block;
@@ -782,11 +781,11 @@ li[class="sm1"] a:hover {
   .right::after {
     left: -38px;
   }
-  #timeline{
-    padding:10px;
+  #timeline {
+    padding: 10px;
   }
-  #timeline-container{
-    padding:30px 30px 30px 0px;
+  #timeline-container {
+    padding: 30px 30px 30px 0px;
   }
   .container-dates p {
     font-size: 1.4em;
