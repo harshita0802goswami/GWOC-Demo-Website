@@ -65,16 +65,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 84%;
-  position: fixed;
-  top: 3rem;
-  left: 8%;
-  background-color: white;
-  padding: 1rem 8%;
-  border-radius: 20px 20px 0px 0px;
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  width:84%;
+  position:fixed;
+  top:0rem;
+  left:8%;
+  background-color:white;
+  padding:1rem 8%;
+  border-radius:20px 20px 0px 0px;
+  border-bottom:0.1rem solid rgba(0,0,0,0.1);
+  z-index:1000;
+  height:100px;
 }
+
+@media screen and (max-width:412px){
+  #header{
+    top:0rem;
+    width:94.5%;
+  }
+  #about-gs,#about-gwoc{
+    padding:10px;
+  }
+}
+
 header .logo {
   font-size: 2.5rem;
   font-weight: bold;
@@ -108,13 +120,12 @@ header .navbar a:hover {
   display: flex;
   gap: 1.5rem;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background: url("/assets/2.png");
-  background-size: cover;
+  margin-top:50px;
+  margin-bottom:50px;
+  /* background:url("../assets/bg.png");
+  background-size:cover;
   background-position: center;
-  background-repeat: no-repeat;
-  opacity: 100;
+  background-repeat: no-repeat; */
 }
 /* .home:before{
   content:"";
@@ -137,12 +148,10 @@ header .navbar a:hover {
   justify-content: center;
   align-items: center;
   padding-top: 15rem;
+  font-weight:bolder;
 }
 .home .content h3 {
-  text-align: justify;
-}
-.home .content h3 > span {
-  font-weight: bolder;
+  font-weight:bolder;
 }
 .home .illustration {
   flex: 1 1 50%;
@@ -334,7 +343,7 @@ li[class="sm1"] a:hover {
     font-size: 55%;
   }
   body {
-    padding: 1.5rem;
+    padding: 0rem 1.5rem 1.5rem 1.5rem;;
   }
   header {
     padding: 2rem;
@@ -387,9 +396,9 @@ li[class="sm1"] a:hover {
   html {
     font-size: 50%;
   }
-  header {
-    width: 74.2%;
-    left: 15.8rem;
+  header{
+    width:74.2%;
+    /* left:15.8rem; */
   }
 }
 
@@ -448,6 +457,9 @@ li[class="sm1"] a:hover {
 }
 #about-gwoc .about-content span {
   font-weight: bolder;
+}
+#about-gs .logo{
+  width:100%;
 }
 .about .heading {
   text-align: center;
@@ -517,13 +529,14 @@ li[class="sm1"] a:hover {
   margin: 5px;
   margin-top: 10px;
   padding-top: 20px;
+  font-weight: 800;
 }
 #registration .registration-box p {
   font-size: 1.7rem;
   font-weight: lighter;
   margin: 5px;
   margin-bottom: 40px;
-  color: var(--orange-color);
+  color:black;
 }
 
 #registration .registration-box p span {
@@ -587,9 +600,10 @@ li[class="sm1"] a:hover {
   }
   #about-gs {
     flex-direction: column-reverse;
+    padding:50px 5px;
   }
   #about-gs .logo {
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
   }
 }
@@ -623,6 +637,7 @@ li[class="sm1"] a:hover {
   header {
     width: 94%;
     left: 1.3rem;
+    top:0px;
   }
 }
 
@@ -813,8 +828,10 @@ li[class="sm1"] a:hover {
   box-shadow: 1px 1px 3px 1px var(--white-color);
   border-radius: 15px;
   margin: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgba(211, 211, 211,0.2);
   color: #ff4e00;
+  color:black;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -843,6 +860,8 @@ li[class="sm1"] a:hover {
 }
 .structure-content h2 {
   color: var(--orange-color);
+  color:black;
+  font-weight:800;
   font-size: 1.8em;
   transition: 0.5s;
   text-align: center;
@@ -869,6 +888,7 @@ ul {
 @media screen and (max-width: 1200px) {
   .structure-content h2 {
     font-size: 2rem;
+    color:black;
   }
   .structure-content ul {
     font-size: 1.5rem;
@@ -884,8 +904,7 @@ ul {
     box-shadow: 1px 1px 3px 1px var(--white-color);
     border-radius: 15px;
     margin: 10px;
-    background-color: #fff;
-    color: #ff4e00;
+    color:black;
     overflow: hidden;
     transition: 0.5s;
   }
@@ -899,7 +918,6 @@ ul {
     margin: 5px 5px;
   }
   .structure-content h2 {
-    color: var(--orange-color);
     font-size: 1.3em;
     transition: 0.5s;
     text-align: center;
