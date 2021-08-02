@@ -543,7 +543,7 @@ li[class="sm1"] a:hover {
   transition: ease-out 0.5s;
 }
 #registration .registration-box .register-button:hover {
-  box-shadow: inset 200px 0px 0px 0px rgba(4, 93, 233, 0.8);
+  box-shadow: inset 200px 0px 0px 0px #2C599D;
 }
 
 .faq {
@@ -570,7 +570,7 @@ li[class="sm1"] a:hover {
 }
 
 .faq-button:hover {
-  box-shadow: inset 200px 0px 0px 0px rgba(4, 93, 233, 0.8);
+  box-shadow: inset 200px 0px 0px 0px #2C599D;
 }
 
 @media screen and (max-width: 750px) {
